@@ -7,13 +7,13 @@ A [LESS](http://lesscss.org/) plugin for [Metalsmith](http://www.metalsmith.io/)
 ## Installation
 
 ```
-npm install metalsmith-less
+npm install @fidian/metalsmith-less
 ```
 
 ## Usage
 
 ```js
-var less = require('metalsmith-less')
+var less = require('@fidian/metalsmith-less')
 
 new Metalsmith(__dirname)
     .use(less(options))
@@ -44,6 +44,14 @@ new Metalsmith(__dirname)
 $ npm test
 ```
 
-## License
+## Credits and License
 
-MIT License, see [LICENSE](https://github.com/christophercliff/metalsmith-less/blob/master/LICENSE.md) for details.
+This is a fork of [metalsmith-less](https://github.com/christophercliff/metalsmith-less/) and is published as `@fidian/metalsmith-less`.
+
+Changes from original:
+
+* Removed style check to eliminate problems reported via `npm audit`.
+* Updated packages.
+* Includes the `removeSource` option.
+
+MIT License, see [LICENSE](LICENSE.md) for details.
