@@ -9,7 +9,7 @@ describe('the plugin', function () {
             .use(less())
             .build(function (err) {
                 if (err) return done(err)
-                assertDir('test/fixtures/basic/expected', 'test/fixtures/basic/build')
+                assertDir('test/fixtures/basic/build', 'test/fixtures/basic/expected')
                 return done(null)
             })
     })
@@ -26,7 +26,7 @@ describe('the plugin', function () {
             }))
             .build(function (err) {
                 if (err) return done(err)
-                assertDir('test/fixtures/import/expected', 'test/fixtures/import/build')
+                assertDir('test/fixtures/import/build', 'test/fixtures/import/expected')
                 return done(null)
             })
     })
@@ -47,7 +47,7 @@ describe('the plugin', function () {
             }))
             .build(function (err) {
                 if (err) return done(err)
-                assertDir('test/fixtures/source-map/expected', 'test/fixtures/source-map/build')
+                assertDir('test/fixtures/source-map/build', 'test/fixtures/source-map/expected')
                 return done(null)
             })
 
@@ -58,7 +58,7 @@ describe('the plugin', function () {
             .use(less())
             .build(function (err) {
                 if (err) return done(err)
-                assertDir('test/fixtures/preserve-source/expected', 'test/fixtures/preserve-source/build')
+                assertDir('test/fixtures/preserve-source/build', 'test/fixtures/preserve-source/expected')
                 return done(null)
             })
     })
@@ -70,7 +70,7 @@ describe('the plugin', function () {
             }))
             .build(function (err) {
                 if (err) return done(err)
-                assertDir('test/fixtures/remove-source/expected', 'test/fixtures/remove-source/build')
+                assertDir('test/fixtures/remove-source/build', 'test/fixtures/remove-source/expected')
                 return done(null)
             })
     })
