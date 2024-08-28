@@ -1,10 +1,10 @@
 {
   "name": "@fidian/metalsmith-less",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "A LESS plugin for Metalsmith",
   "main": "./lib/",
   "scripts": {
-    "reinstall": "rm -rf node_modules && npm install",
+    "reinstall": "rm -rf node_modules package-lock.json && npm install",
     "test": "./node_modules/.bin/mocha --reporter spec --grep ''"
   },
   "keywords": [
